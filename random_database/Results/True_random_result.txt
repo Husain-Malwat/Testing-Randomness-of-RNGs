@@ -1,0 +1,30 @@
+PS E:\test> & C:/Users/gaura/AppData/Local/Programs/Python/Python310/python.exe e:/test/test.py
+[1 0 0 ... 0 1 1]
+Eligible test from NIST-SP800-22r1a:
+-monobit
+-frequency_within_block
+-runs
+-longest_run_ones_in_a_block
+-binary_matrix_rank
+-dft
+-non_overlapping_template_matching
+-serial
+-approximate_entropy
+-cumulative sums
+-random_excursion
+-random_excursion_variant
+Test results:
+- PASSED - score: 0.417 - Monobit - elapsed time: 0 ms
+- PASSED - score: 0.843 - Frequency Within Block - elapsed time: 0 ms
+- PASSED - score: 0.738 - Runs - elapsed time: 49 ms
+- PASSED - score: 0.448 - Longest Run Ones In A Block - elapsed time: 0 ms
+- PASSED - score: 0.578 - Binary Matrix Rank - elapsed time: 519 ms
+- FAILED - score: 0.0 - Discrete Fourier Transform - elapsed time: 16 ms
+- PASSED - score: 0.347 - Non Overlapping Template Matching - elapsed time: 495 ms
+e:\test\nistrng\test.py:47: RuntimeWarning: Mean of empty slice
+  return float(numpy.nanmean(self._score_list))
+- FAILED - score: nan - Serial - elapsed time: 5391 ms
+- FAILED - score: 0.0 - Approximate Entropy - elapsed time: 2124 ms
+- FAILED - score: 0.0 - Cumulative Sums - elapsed time: 97 ms
+- FAILED - score: 0.63 - Random Excursion - elapsed time: 438 ms
+- FAILED - score: 0.0 - Random Excursion Variant - elapsed time: 0 ms

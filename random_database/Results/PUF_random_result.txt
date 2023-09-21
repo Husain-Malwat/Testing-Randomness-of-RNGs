@@ -1,0 +1,26 @@
+PS E:\test> & C:/Users/gaura/AppData/Local/Programs/Python/Python310/python.exe e:/test/test.py
+[0 0 0 ... 0 1 1]
+Eligible test from NIST-SP800-22r1a:
+-monobit
+-frequency_within_block
+-runs
+-longest_run_ones_in_a_block
+-dft
+-non_overlapping_template_matching
+-serial
+-approximate_entropy
+-cumulative sums
+-random_excursion
+-random_excursion_variant
+Test results:
+- PASSED - score: 0.376 - Monobit - elapsed time: 0 ms
+- FAILED - score: 0.0 - Frequency Within Block - elapsed time: 0 ms
+- FAILED - score: 0.0 - Runs - elapsed time: 0 ms
+- FAILED - score: 0.0 - Longest Run Ones In A Block - elapsed time: 0 ms
+- FAILED - score: 0.0 - Discrete Fourier Transform - elapsed time: 0 ms
+- PASSED - score: 0.989 - Non Overlapping Template Matching - elapsed time: 88 ms
+- FAILED - score: 0.0 - Serial - elapsed time: 1211 ms
+- FAILED - score: 0.0 - Approximate Entropy - elapsed time: 535 ms
+- PASSED - score: 0.615 - Cumulative Sums - elapsed time: 24 ms
+- FAILED - score: 0.005 - Random Excursion - elapsed time: 113 ms
+- PASSED - score: 1.208 - Random Excursion Variant - elapsed time: 0 ms

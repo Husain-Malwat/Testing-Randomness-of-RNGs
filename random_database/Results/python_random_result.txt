@@ -1,0 +1,37 @@
+PS E:\test> & C:/Users/gaura/AppData/Local/Programs/Python/Python310/python.exe e:/test/test.py
+[0 0 0 ... 1 0 0]
+Eligible test from NIST-SP800-22r1a:
+-monobit
+-frequency_within_block
+-runs
+-longest_run_ones_in_a_block
+-binary_matrix_rank
+-dft
+-non_overlapping_template_matching
+-overlapping_template_matching
+-maurers_universal
+-linear_complexity
+-serial
+-approximate_entropy
+-cumulative sums
+-random_excursion
+-random_excursion_variant
+
+Test results:
+- PASSED - score: 0.407 - Monobit - elapsed time: 0 ms
+- PASSED - score: 0.472 - Frequency Within Block - elapsed time: 13 ms
+- PASSED - score: 0.201 - Runs - elapsed time: 357 ms
+- PASSED - score: 0.475 - Longest Run Ones In A Block - elapsed time: 131 ms
+- PASSED - score: 0.305 - Binary Matrix Rank - elapsed time: 4047 ms
+- FAILED - score: 0.0 - Discrete Fourier Transform - elapsed time: 161 ms
+- PASSED - score: 0.063 - Non Overlapping Template Matching - elapsed time: 9458 ms
+- FAILED - score: 0.0 - Overlapping Template Matching - elapsed time: 2978 ms
+- FAILED - score: 0.01 - Maurers Universal - elapsed time: 1134 ms
+- FAILED - score: 0.0 - Linear Complexity - elapsed time: 183908 ms
+e:\test\nistrng\test.py:47: RuntimeWarning: Mean of empty slice
+  return float(numpy.nanmean(self._score_list))
+- FAILED - score: nan - Serial - elapsed time: 94757 ms
+- FAILED - score: 0.0 - Approximate Entropy - elapsed time: 44454 ms
+- FAILED - score: 0.0 - Cumulative Sums - elapsed time: 2066 ms
+- FAILED - score: 0.683 - Random Excursion - elapsed time: 8405 ms
+- PASSED - score: 0.17 - Random Excursion Variant - elapsed time: 41 ms
